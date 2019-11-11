@@ -25,9 +25,9 @@ cars_df = cars_df.merge(ratings, how='inner', left_index=True, right_index=True)
 
 ## Results and Discussion
 
-The Lasso Regression model has an R<sup>2</sup> of 0.93 on out-of-sample data, so it actually explains quite a lot of the variation in prices, and it eliminates quite a few of the extraneous features in the initial regression. Interestingly, it eliminates Rating as a feature, suggesting that rating doesn't actually have much of an impact on price. If you're a price sensitive buyer, this is really good news, because it means you should be able to get a car that automotive journalists like without spending a lot of money. So maybe it's not worth springing for that Tesla or BMW. Anyway, as someone once told me not long after buying an expensive car, "it was pretty cool having it at first, but now it's just how I get to work". Fair enough.
+The Lasso Regression model has an R<sup>2</sup> of 0.93 on out-of-sample data, so it actually explains quite a lot of the variation in prices, and it eliminates quite a few of the extraneous features in the initial regression. Interestingly, it eliminates Rating as a feature, suggesting that rating doesn't actually have much of an impact on price. If you're a price sensitive buyer, this is really good news, because it means you should be able to get a car that automotive journalists like without spending a lot of money. So maybe it's not worth springing for that Tesla or BMW. Anyway, as someone once told me after buying an expensive car, "it was pretty cool at first, but now it's just how I get to work". Fair enough.
 
-The features with the greatest impact on price are weight and horsepower, which are somewhat correlated, powerful engines being larger and heavier. Car brand also has a notable impact on car price, with non luxury brands having a discrete drop in price over more expensive marks. The takeaway is that you can get a deal on big, powerful cars (if that's your thing) by buying Fords and Chevys.
+The features with the greatest impact on price are weight and horsepower, which are somewhat correlated, powerful engines being larger and heavier. Car brand also has a notable impact on car price, with non luxury brands having a discrete drop in price over more expensive marks. The takeaway is that you can get a deal on big, powerful cars by buying Fords and Chevys.
 
 ## Future Work
 
